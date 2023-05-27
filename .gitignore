@@ -1,3 +1,6 @@
+# Added by itsa-me-dea (node_modules/ already present under # Dependency directories)
+.DS_Store/
+
 # Logs
 logs
 *.log
