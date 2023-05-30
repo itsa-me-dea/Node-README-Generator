@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
+const generateMD = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 // const questions = [];
@@ -82,45 +83,13 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
-const generateMD = ({ project, username, email, what, why, how, urXP, installation, usage, screenshot, collaborators, thirdParty, tutorials, license}) =>
-`# ${project}
+function writeToFile(data) {
+    const filename = "./README.md";
 
-### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) | [License](#license) | [Questions](#questions)**
-
-## Description
-
-${what}.
-
-${why}.
-
-${how}.
-
-${urXP}.
-
-## Installation
-
-${installation}.
-
-## Usage
-
-${usage}.
-
-![alt text](${screenshot})
-
-## Credits
-
-- ${collaborators}.
-- ${thirdParty}.
-- ${tutorials}.
-
-
-## License
-
-Please refer to the [${license}](/LICENSE) within the repository.
-
-## Questions
-
-My gitHub username is [${username}](https://github.com/${username}), and you can contact me at ${email}.`;
+    fs.writeFile(filename, data, function (err) {
+        err ? console.log(err) : console.log(filename + " created!")
+    }); 
+}
 
 // TODO: Create a function to initialize app
 const init = () => {
