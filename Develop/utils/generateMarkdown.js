@@ -19,43 +19,43 @@ function renderLicenseLink(license) {
   // select correct license link for the selected license
   switch(license) {
     case "Apcahe License 2.0":
-      licenseLink = "https://mit-license.org/";
+      licenseLink = "https://www.apache.org/licenses/LICENSE-2.0";
       break;
     case "GNU General License v3.0":
-      licenseLink = "https://opensource.org/licenses/BSD-3-Clause";
-      break;
-    case "MIT License":
       licenseLink = "https://www.gnu.org/licenses/gpl-3.0.en.html";
       break;
-    case "BSD 2-Clause License":
-      licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
-      break;
-    case "BSD 3-Clause License":
+    case "MIT License":
       licenseLink = "https://mit-license.org/";
       break;
+    case "BSD 2-Clause License":
+      licenseLink = "https://opensource.org/license/bsd-2-clause/";
+      break;
+    case "BSD 3-Clause License":
+      licenseLink = "https://opensource.org/license/bsd-3-clause/";
+      break;
     case "Boost Software License 1.0":
-      licenseLink = "https://opensource.org/licenses/BSD-3-Clause";
+      licenseLink = "https://www.boost.org/LICENSE_1_0.txt";
       break;
     case "Creative Commons Zero v1.0 Universal":
       licenseLink = "https://www.gnu.org/licenses/gpl-3.0.en.html";
       break;
     case "Eclipse Public License 2.0":
-      licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
+      licenseLink = "https://www.eclipse.org/legal/epl-2.0/";
       break;
     case "GNU Affero General Public License v3.0":
-      licenseLink = "https://mit-license.org/";
+      licenseLink = "https://www.gnu.org/licenses/agpl-3.0.en.html";
       break;
     case "GNU General Public License v2.0":
-      licenseLink = "https://opensource.org/licenses/BSD-3-Clause";
+      licenseLink = "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html";
       break;
     case "GNU Lesser General Public License v2.1":
-      licenseLink = "https://www.gnu.org/licenses/gpl-3.0.en.html";
+      licenseLink = "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html";
       break;
     case "Mozilla Public License 2.0":
-      licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
+      licenseLink = "https://www.mozilla.org/en-US/MPL/2.0/";
       break;
     case "The Unlicense":
-      licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
+      licenseLink = "https://unlicense.org/";
       break;
     default:
       licenseLink = "";
