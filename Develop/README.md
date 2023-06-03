@@ -1,37 +1,39 @@
-# f
+# GoT
 
-
+![License Badge](https://img.shields.io/badge/license-MIT%20License-green?style=for-the-badge&logo=appveyor)
 
 ### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) | [License](#license) | [Questions](#questions)**
 
 ## Description
 
-f.
+To git dis done.
 
-f.
+Because.
 
-f.
+Idk lol.
 
-f.
+Nothing.
 
 ## Installation
 
-f.
+DOWNLOAD.
 
 ## Usage
 
-f.
+Figure it out.
 
-![alt text](f)
+![alt text](No)
 
 ## Credits
 
-- f.
-- f.
-- f.
+- Collaborators: None.
+- Third-party assets: None.
+- Tutorials: None.
 
+## License
 
+    The license this application is covered under is: [MIT License](https://mit-license.org/).
 
 ## Questions
 
-My gitHub username is [f](https://github.com/f), and you can contact me at f.
+My gitHub username is [itsa-me-dea](https://github.com/itsa-me-dea), and you can contact me at wachadea@gmail.com.

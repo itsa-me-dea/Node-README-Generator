@@ -1,9 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// If no license selected, return an empty string
 function renderLicenseBadge(license) {
   let badge = "";
 
+  // Create a badge from selected license
   if(license != "None") {
+    // replace empty spaces in license for link
     let noSpace = license.replace(/\s+/g, '%20'); 
     badge = "![License Badge](https://img.shields.io/badge/license-" + noSpace + "-green?style=for-the-badge&logo=appveyor)";
     
@@ -13,11 +15,11 @@ function renderLicenseBadge(license) {
 }
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// If no license selected, return an empty string
 function renderLicenseLink(license) {
   let licenseLink;
 
-  // select correct license link for the selected license
+  // Add selected license link
   switch(license) {
     case "Apcahe License 2.0":
       licenseLink = "https://www.apache.org/licenses/LICENSE-2.0";
@@ -67,12 +69,11 @@ function renderLicenseLink(license) {
 }
 
 // TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// If no license selected, return an empty string
 function renderLicenseSection(license) {
   let licenseSect = "";
 
-  // if a license has been selected, create License section
-  // with link to license information
+  // create license section if license is selected
   if (license != "None") {
     licenseSect = 
     `## License
@@ -83,18 +84,26 @@ function renderLicenseSection(license) {
   return licenseSect;
 }
 
-// TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
+// If no license selected, return an empty string
+function renderLicenseTOC(license) {
+  let licenseTOC = ""
+  
+  // generate TOC link for license if selected
+  if (license != "None") {
+    licenseTOC = 
+    `| [License](#license) `;
+  }
 
-// `;
-// }
+  return licenseTOC;
+}
+
+// TODO: Create a function to generate markdown for README
 const generateMarkdown = ({ project, username, email, what, why, how, urXP, installation, usage, screenshot, collaborators, thirdParty, tutorials, license}) =>
 `# ${project}
 
 ${renderLicenseBadge(license)}
 
-### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) | [License](#license) | [Questions](#questions)**
+### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) ${renderLicenseTOC(license)}| [Questions](#questions)**
 
 ## Description
 
@@ -118,9 +127,9 @@ ${usage}.
 
 ## Credits
 
-- ${collaborators}.
-- ${thirdParty}.
-- ${tutorials}.
+- Collaborators: ${collaborators}.
+- Third-party assets: ${thirdParty}.
+- Tutorials: ${tutorials}.
 
 ${renderLicenseSection(license)}
 
