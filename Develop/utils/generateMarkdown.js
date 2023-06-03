@@ -7,11 +7,24 @@ function renderLicenseBadge(license) {
   if(license != "None") {
     // replace empty spaces in license for link
     let noSpace = license.replace(/\s+/g, '%20'); 
-    badge = "![License Badge](https://img.shields.io/badge/license-" + noSpace + "-green?style=for-the-badge&logo=appveyor)";
+    badge = "[![License Badge](https://img.shields.io/badge/license-" + noSpace + "-green?style=for-the-badge&logo=appveyor)](" + renderLicenseLink(license) + ")";
     
   }
 
   return badge;
+}
+
+// If no contribution selected, return an empty string
+function renderContributeBadge(contribute) {
+  let badge2 = "";
+
+  // Create a badge from selected contribution
+  if(contribute != "None") {
+    badge2 = "[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge&logo=appveyor)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)";
+    
+  }
+
+  return badge2;
 }
 
 // TODO: Create a function that returns the license link
@@ -81,6 +94,27 @@ function renderLicenseSection(license) {
   return licenseSect;
 }
 
+function renderContributeSection(contribute) {
+  let contributeSect = "<!-- If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer. -->\n" + contribute;
+
+  // create license section if license is selected
+  if (contribute != "None") {
+  contributeSect = `In general, follow the "fork-and-pull" Git workflow.
+
+  1. **Fork** the repo on GitHub.
+  2. **Clone** the project to your own machine.
+  3. **Commit** changes to your own branch.
+  4. **Push** your work back up to your fork.
+  5. Submit a **pull request** so that your changes can be reviewed.
+    
+  NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+  
+  When contributing to this project, please follow the [${contribute}](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) code of conduct.`;
+  }
+
+  return contributeSect;
+}
+
 // If no license selected, return an empty string
 function renderLicenseTOC(license) {
   let licenseTOC = ""
@@ -95,12 +129,13 @@ function renderLicenseTOC(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-const generateMarkdown = ({ project, username, email, what, why, how, urXP, installation, usage, screenshot, collaborators, thirdParty, tutorials, license}) =>
+const generateMarkdown = ({ project, username, email, what, why, how, urXP, installation, usage, screenshot, collaborators, thirdParty, tutorials, license, contribute, tests}) =>
 `# ${project}
 
 ${renderLicenseBadge(license)}
+${renderContributeBadge(contribute)}
 
-### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) ${renderLicenseTOC(license)}| [Questions](#questions)**
+### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) ${renderLicenseTOC(license)}| [Contribute](#contribute) | [Tests](#tests) | [Questions](#questions)**
 
 ## Description
 
@@ -129,6 +164,14 @@ ${usage}.
 - Tutorials: ${tutorials}.
 
 ${renderLicenseSection(license)}
+
+## Contribute
+
+${renderContributeSection(contribute)}.
+
+## Tests
+
+${tests}.
 
 ## Questions
 

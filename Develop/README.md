@@ -1,8 +1,9 @@
 # d
 
-![License Badge](https://img.shields.io/badge/license-Apcahe%20License%202.0-green?style=for-the-badge&logo=appveyor)
 
-### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) | [License](#license) | [Questions](#questions)**
+
+
+### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) | [Contribute](#contribute) | [Tests](#tests) | [Questions](#questions)**
 
 ## Description
 
@@ -30,9 +31,16 @@ d.
 - Third-party assets: d.
 - Tutorials: d.
 
-## License
 
- The license this application is covered under is: [Apcahe License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+## Contribute
+
+<!-- If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer. -->
+None.
+
+## Tests
+
+d.
 
 ## Questions
 

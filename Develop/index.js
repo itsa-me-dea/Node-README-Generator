@@ -78,6 +78,17 @@ const questions = () => {
         message: 'Choose a license:',
         choices: ["None", "Apcahe License 2.0", "GNU General License v3.0", "MIT License", "BSD 2-Clause License", "BSD 3-Clause License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"]
     },
+    {
+        type: 'list',
+        name: 'contribute',
+        message: 'Guidelines for developers to contribute to your application:',
+        choices: ["None", "Contributor Covenant"]
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Write tests for your application and provide examples on how to run them:',
+    },
 ]);
 };
 
