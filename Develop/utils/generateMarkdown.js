@@ -4,7 +4,8 @@ function renderLicenseBadge(license) {
   let badge = "";
 
   if(license != "None") {
-    badge = "![License Badge](https://img.shields.io/badge/license-" + license + "-green?style=for-the-badge&logo=appveyor)";
+    let noSpace = license.replace(/\s+/g, '%20'); 
+    badge = "![License Badge](https://img.shields.io/badge/license-" + noSpace + "-green?style=for-the-badge&logo=appveyor)";
     
   }
 
@@ -73,8 +74,10 @@ function renderLicenseSection(license) {
   // if a license has been selected, create License section
   // with link to license information
   if (license != "None") {
-    licenseSect += "## License\n"
-    licenseSect += "Please see " + renderLicenseLink(license) + " to get detailed information for this license\n";
+    licenseSect = 
+    `## License
+
+    The license this application is covered under is: [${license}](${renderLicenseLink(license)}).`;
   }
 
   return licenseSect;
@@ -86,8 +89,10 @@ function renderLicenseSection(license) {
 
 // `;
 // }
-const generateMD = ({ project, username, email, what, why, how, urXP, installation, usage, screenshot, collaborators, thirdParty, tutorials, license}) =>
+const generateMarkdown = ({ project, username, email, what, why, how, urXP, installation, usage, screenshot, collaborators, thirdParty, tutorials, license}) =>
 `# ${project}
+
+${renderLicenseBadge(license)}
 
 ### **[Description](#description) | [Installation](#installation) | [Usage](#usage) | [Credits](#credits) | [License](#license) | [Questions](#questions)**
 
@@ -117,13 +122,10 @@ ${usage}.
 - ${thirdParty}.
 - ${tutorials}.
 
-
-## License
-
-The license this application is covered under is: [${license}](/LICENSE).
+${renderLicenseSection(license)}
 
 ## Questions
 
 My gitHub username is [${username}](https://github.com/${username}), and you can contact me at ${email}.`;
 
-module.exports = generateMD;
+module.exports = generateMarkdown;
