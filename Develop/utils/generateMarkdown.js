@@ -75,10 +75,7 @@ function renderLicenseSection(license) {
 
   // create license section if license is selected
   if (license != "None") {
-    licenseSect = 
-    `## License
-
-    The license this application is covered under is: [${license}](${renderLicenseLink(license)}).`;
+    licenseSect = "## License\n\n The license this application is covered under is: [" + license + "](" + renderLicenseLink(license) + ").";
   }
 
   return licenseSect;
