@@ -98,8 +98,15 @@ function renderLicenseSection(license) {
 function collabList(collaborators) {
   let collabArr = collaborators.split(', ');
   let markdownList = collabArr.map(function(element) {
-  return `  - [${element.trim()}](https://github.com/${element.trim()})`;
+  return `  - ${element.trim()}.`;
   });
+
+  if(collaborators != "None") {
+    // creates link with listed collaborators
+    markdownList = collabArr.map(function(element) {
+    return `  - [${element.trim()}](https://github.com/${element.trim()})`;
+    });   
+  }
 
   return markdownList.join('\n');
 }
@@ -129,7 +136,7 @@ function renderContributeSection(contribute) {
     
   NOTE: Be sure to merge the latest from "upstream" before making a pull request!
   
-  When contributing to this project, please follow the [${contribute}](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) code of conduct.`;
+  When contributing to this project, please follow the [${contribute}](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) code of conduct`;
   }
 
   return contributeSect;
@@ -190,7 +197,7 @@ ${renderLicenseSection(license)}
 
 ## Contribute
 
-${renderContributeSection(contribute)}
+${renderContributeSection(contribute)}.
 
 ## Tests
 
