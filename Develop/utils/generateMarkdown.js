@@ -117,7 +117,7 @@ function listToMarkdown(list) {
 function renderContributeSection(contribute) {
   let contributeSect = "<!-- If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer. -->\n" + contribute;
 
-  // create license section if license is selected
+  // create license section if license is selected ( Adapted from https://github.com/Esri/contributing/blob/master/README.md?plain=1)
   if (contribute != "None") {
   contributeSect = `In general, follow the "fork-and-pull" Git workflow.
 
@@ -175,7 +175,7 @@ ${installation}.
 
 ${usage}.
 
-![alt text](${screenshot})
+![example of app](${screenshot})
 
 ## Credits
 

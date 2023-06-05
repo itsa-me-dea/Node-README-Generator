@@ -23,20 +23,16 @@
 
 .
 
-![alt text]()
+![example of app]()
 
 ## Credits
 
 - Collaborators: 
-  - [none](https://github.com/none)
+  - [](https://github.com/)
 - Third-party assets: 
-  - a
-  - b
-  - c
+  - 
 - Tutorials: 
-  - d
-  - e
-  - f
+  - 
 
 
 

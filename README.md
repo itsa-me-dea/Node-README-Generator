@@ -13,7 +13,7 @@ I built this project for users to easily create a README by answering a series o
 
 This solves the issue of writing a README. As stated before, many find writing a README to be a chore. Rather than having to seach for a good template, this just takes the user's input and creates a README with all the neccessary features..
 
-I learned how to utilize Node, arrow functions, template literals, and how to generate files.
+I learned how to utilize Node, arrow functions, template literals (and just how literal they are), and how to generate files.
 
 ## Installation
 
@@ -21,15 +21,15 @@ Download or fork this package. From there, open the integrated terminal (this is
 
 ## Usage
 
-In the integrated table, run `node index` and answer the prompts. NOTE: If you don't have an answer for a prompt, enter N/A or none, and this can can be editted or deleted by the user in the README md document. After answering the prompts, the README.md will be generated in /Develop..
+In the integrated table, run `node index` and answer the prompts. (**NOTE**: If you don't have an answer for a prompt, enter N/A or none, and this can can be editted or deleted by the user in the README md document. Additionally, for the **[Credits](#credits)** section, use a comma separated list for multiple entries). After answering the prompts, the README.md will be generated in `/Develop` folder.
 
-![alt text](N/A)
+![alt text](Develop/Assets/placeholder.gif)
 
 ## Credits
 
 - Collaborators: None.
-- Third-party assets: None.
-- Tutorials: None.
+- Third-party assets: https://shields.io/category/license, https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide, https://www.npmjs.com/package/inquirer/v/8.2.4#prompt, https://baldbeardedbuilder.com/blog/code-of-conduct-and-contributions-in-public-repositories.md/
+- Tutorials: https://www.tutorialrepublic.com/faq/how-to-convert-comma-separated-string-into-an-array-in-javascript.php#:~:text=Answer%3A%20Use%20the%20split(),to%20an%20array%20of%20characters., https://www.shecodes.io/athena/10237-how-to-replace-spaces-with-dashes-in-a-javascript-string#:~:text=replace()%20method%20with%20the,whitespace%20character%20with%20a%20dash., https://stackoverflow.com/questions/37963168/how-to-call-calling-a-function-inside-a-template-literal, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates, https://github.com/Esri/contributing/blob/master/README.md?plain=1
 
 ## License
 
