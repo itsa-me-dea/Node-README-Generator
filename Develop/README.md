@@ -1,4 +1,4 @@
-# d
+# 
 
 
 
@@ -7,29 +7,38 @@
 
 ## Description
 
-d.
+.
 
-d.
+.
 
-d.
+.
 
-d.
+.
 
 ## Installation
 
-d.
+.
 
 ## Usage
 
-d.
+.
 
-![alt text](d)
+![alt text]()
 
 ## Credits
 
-- Collaborators: d.
-- Third-party assets: d.
-- Tutorials: d.
+- Collaborators: 
+  - [a](https://github.com/a)
+  - [b](https://github.com/b)
+  - [c](https://github.com/c)
+- Third-party assets: 
+  - d
+  - e
+  - f
+- Tutorials: 
+  - g
+  - h
+  - i
 
 
 
@@ -40,8 +49,8 @@ None.
 
 ## Tests
 
-d.
+.
 
 ## Questions
 
-My gitHub username is [d](https://github.com/d), and you can contact me at d.
+My gitHub username is [](https://github.com/), and you can contact me at .

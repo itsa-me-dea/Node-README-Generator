@@ -94,6 +94,34 @@ function renderLicenseSection(license) {
   return licenseSect;
 }
 
+// create list from Collaborators, Third-party assets, and Tutorials lists
+function collabList(collaborators) {
+  let collabArr = collaborators.split(', ');
+  let markdownList = collabArr.map(function(element) {
+  return `  - [${element.trim()}](https://github.com/${element.trim()})`;
+  });
+
+  return markdownList.join('\n');
+}
+
+function thirdPartyList(thirdParty) {
+  let thirdPartyArr = thirdParty.split(', ');
+  let markdownList = thirdPartyArr.map(function(element) {
+  return '  - ' + element.trim();
+  });
+
+  return markdownList.join('\n');
+}
+
+function tutorialList(tutorials) {
+  let tutorialsArr = tutorials.split(', ');
+  let markdownList = tutorialsArr.map(function(element) {
+  return '  - ' + element.trim();
+  });
+
+  return markdownList.join('\n');
+}
+
 function renderContributeSection(contribute) {
   let contributeSect = "<!-- If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer. -->\n" + contribute;
 
@@ -159,9 +187,12 @@ ${usage}.
 
 ## Credits
 
-- Collaborators: ${collaborators}.
-- Third-party assets: ${thirdParty}.
-- Tutorials: ${tutorials}.
+- Collaborators: 
+${collabList(collaborators)}
+- Third-party assets: 
+${thirdPartyList(thirdParty)}
+- Tutorials: 
+${tutorialList(tutorials)}
 
 ${renderLicenseSection(license)}
 
