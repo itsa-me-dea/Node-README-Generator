@@ -94,7 +94,7 @@ function renderLicenseSection(license) {
   return licenseSect;
 }
 
-// create list from Collaborators, Third-party assets, and Tutorials lists
+// create list from Collaborators
 function collabList(collaborators) {
   let collabArr = collaborators.split(', ');
   let markdownList = collabArr.map(function(element) {
@@ -104,18 +104,10 @@ function collabList(collaborators) {
   return markdownList.join('\n');
 }
 
-function thirdPartyList(thirdParty) {
-  let thirdPartyArr = thirdParty.split(', ');
-  let markdownList = thirdPartyArr.map(function(element) {
-  return '  - ' + element.trim();
-  });
-
-  return markdownList.join('\n');
-}
-
-function tutorialList(tutorials) {
-  let tutorialsArr = tutorials.split(', ');
-  let markdownList = tutorialsArr.map(function(element) {
+// create list from Third-party assets and Tutorials lists
+function listToMarkdown(list) {
+  let array = list.split(', ');
+  let markdownList = array.map(function(element) {
   return '  - ' + element.trim();
   });
 
@@ -190,9 +182,9 @@ ${usage}.
 - Collaborators: 
 ${collabList(collaborators)}
 - Third-party assets: 
-${thirdPartyList(thirdParty)}
+${listToMarkdown(thirdParty)}
 - Tutorials: 
-${tutorialList(tutorials)}
+${listToMarkdown(tutorials)}
 
 ${renderLicenseSection(license)}
 

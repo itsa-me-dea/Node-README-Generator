@@ -28,17 +28,15 @@
 ## Credits
 
 - Collaborators: 
-  - [a](https://github.com/a)
-  - [b](https://github.com/b)
-  - [c](https://github.com/c)
+  - [none](https://github.com/none)
 - Third-party assets: 
+  - a
+  - b
+  - c
+- Tutorials: 
   - d
   - e
   - f
-- Tutorials: 
-  - g
-  - h
-  - i
 
 
 
