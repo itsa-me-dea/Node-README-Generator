@@ -190,7 +190,7 @@ ${renderLicenseSection(license)}
 
 ## Contribute
 
-${renderContributeSection(contribute)}.
+${renderContributeSection(contribute)}
 
 ## Tests
 
