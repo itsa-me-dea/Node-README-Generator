@@ -21,14 +21,14 @@ Download or fork this package. From there, open the integrated terminal (this is
 
 ## Usage
 
-In the integrated table, run `node index` and answer the prompts. (**NOTE**: If you don't have an answer for a prompt, enter N/A or none, and this can be edited or deleted by the user in the README md document. Additionally, for the **[Credits](#credits)** section, use a comma separated list for multiple entries. And there's no need to end your prompts with a final period, as that's built into the template.) After answering the prompts, the README.md will be generated in the `/Develop` folder.
+In the integrated table, run `node index` and answer the prompts. (**NOTE**: If you don't have an answer for a prompt, enter "N/A" or "None" (with capitalization), and this can be edited or deleted by the user in the README md document. Additionally, for the **[Credits](#credits)** section, use a comma separated list for multiple entries. And there's no need to end your prompts with a final period, as that's built into the template.) After answering the prompts, the README.md will be generated in the `/Develop` folder.
 
 ![example of final product](/Develop/Assets/final-product.png)
 
 ## Credits
 
 - Collaborators: 
-  - [None](https://github.com/None)
+  - N/A.
 - Third-party assets: 
   - https://shields.io/category/license
   - https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide

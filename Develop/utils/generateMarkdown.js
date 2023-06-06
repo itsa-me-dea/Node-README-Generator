@@ -101,7 +101,7 @@ function collabList(collaborators) {
   return `  - ${element.trim()}.`;
   });
 
-  if(collaborators != "None") {
+  if(collaborators != "None" && collaborators != "N/A") {
     // creates link with listed collaborators
     markdownList = collabArr.map(function(element) {
     return `  - [${element.trim()}](https://github.com/${element.trim()})`;
