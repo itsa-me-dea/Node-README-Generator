@@ -36,6 +36,7 @@ A **walkthrough video** can be downloaded from the [Assets](/Develop/Assets/scre
   - https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
   - https://www.npmjs.com/package/inquirer/v/8.2.4#prompt
   - https://baldbeardedbuilder.com/blog/code-of-conduct-and-contributions-in-public-repositories.md/
+  - UCSD-VIRT-FSF-PT-03-2023-U-LOLC
 - Tutorials: 
   - https://www.tutorialrepublic.com/faq/how-to-convert-comma-separated-string-into-an-array-in-javascript.php#:~:text=Answer%3A%20Use%20the%20split(),to%20an%20array%20of%20characters.
   - https://www.shecodes.io/athena/10237-how-to-replace-spaces-with-dashes-in-a-javascript-string#:~:text=replace()%20method%20with%20the,whitespace%20character%20with%20a%20dash.
