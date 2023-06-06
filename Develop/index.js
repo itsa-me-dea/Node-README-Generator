@@ -95,7 +95,7 @@ const questions = () => {
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 function writeToFile(data) {
-    const filename = "./README.md";
+    const filename = "./generated-README.md";
 
     fs.writeFile(filename, data, function (err) {
         err ? console.log(err) : console.log(filename + " created!")
@@ -107,8 +107,8 @@ const init = () => {
     questions()
       // Use writeFile method imported from fs.promises to use promises instead of
       // a callback function
-      .then((answers) => writeFile('README.md', generateMarkdown(answers)))
-      .then(() => console.log('Successfully wrote to README.md'))
+      .then((answers) => writeFile('generated-README.md', generateMarkdown(answers)))
+      .then(() => console.log('Successfully wrote to generated-README.md'))
       .catch((err) => console.error(err));
   };
 

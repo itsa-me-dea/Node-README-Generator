@@ -21,7 +21,7 @@ Download or fork this package. From there, open the integrated terminal (this is
 
 ## Usage
 
-In the integrated table, run `node index` and answer the prompts. (**NOTE**: If you don't have an answer for a prompt, enter "N/A" or "None" (with capitalization), and this can be edited or deleted by the user in the README md document. Additionally, for the **[Credits](#credits)** section, use a comma separated list for multiple entries. And there's no need to end your prompts with a final period, as that's built into the template.) After answering the prompts, the README.md will be generated in the `/Develop` folder.
+In the integrated table, run `node index` and answer the prompts. (**NOTE**: If you don't have an answer for a prompt, enter "N/A" or "None" (with capitalization), and this can be edited or deleted by the user in the README md document. Additionally, for the **[Credits](#credits)** section, use a comma separated list for multiple entries. And there's no need to end your prompts with a final period, as that's built into the template.) After answering the prompts, the `generated-README.md` will be generated in the `/Develop` folder.
 
 A **walkthrough video** can be downloaded from the [Assets](/Develop/Assets/screen-capture-NodeREADMEgen.mov) folder.
 
